@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EART Brasil | Headless Instruments</title>
+    <title>EART Brasil | Headless Guitars</title>
 
-    <meta name="description" content="EART Brasil. Instrumentos headless com design contemporâneo, ergonomia e construção voltada à performance.">
+    <meta
+        name="description"
+        content="EART Brasil. Guitarras headless com design contemporâneo, ergonomia e performance."
+    >
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#11100f">
+    <meta name="theme-color" content="#0b0b0b">
 
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="EART Brasil">
-    <meta property="og:title" content="EART Brasil | Headless Instruments">
-    <meta property="og:description" content="Headless guitars com linguagem de design, precisão e performance.">
+    <meta property="og:title" content="EART Brasil | Headless Guitars">
+    <meta
+        property="og:description"
+        content="Headless guitars. Design contemporâneo, precisão e performance."
+    >
     <meta property="og:image" content="hero-eart-headless.png">
 
     <link rel="icon" href="favicon.png">
@@ -24,11 +30,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
+
+    <script>
+        if ("scrollRestoration" in history) {
+            history.scrollRestoration = "manual";
+        }
+    </script>
 </head>
 
 <body>
@@ -36,344 +48,267 @@
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
     <!-- ==================================================
-         TOP BAR
-    =================================================== -->
-    <div class="topbar">
-        <div class="shell topbar-inner">
-            <span>EART / BRAZIL</span>
-            <span>HEADLESS ENGINEERING</span>
-            <span>EST. FOR THE NEXT PLAYER</span>
-        </div>
-    </div>
-
-    <!-- ==================================================
          HEADER
     =================================================== -->
     <header class="header" id="topo">
-        <div class="shell header-inner">
+        <div class="container header-inner">
 
             <a class="brand" href="#inicio" aria-label="EART Brasil - início">
-                <span class="brand-main">EART</span>
-                <span class="brand-sub">BRASIL</span>
+                <img src="logo-eart.png" alt="EART Brasil">
             </a>
 
             <nav class="nav" id="menu-principal" aria-label="Navegação principal">
-                <a href="#manifesto">Manifesto</a>
                 <a href="#headless">Headless</a>
-                <a href="#colecao">Coleção</a>
-                <a href="#construcao">Construção</a>
+                <a href="#engenharia">Engenharia</a>
+                <a href="#modelos">Modelos</a>
+                <a href="#detalhes">Detalhes</a>
+                <a href="#contato">Contato</a>
             </nav>
 
-            <a class="header-cta" href="#contato">
-                Consultar
-            </a>
+            <div class="header-actions">
+                <a class="header-link" href="#modelos">Explorar</a>
 
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Abrir menu"
-                aria-expanded="false"
-                aria-controls="menu-principal"
-            >
-                <span></span>
-                <span></span>
-            </button>
+                <button
+                    class="menu-button"
+                    type="button"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="menu-principal"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
 
         </div>
     </header>
 
+
     <main id="conteudo">
 
         <!-- ==================================================
-             HERO EDITORIAL
+             HERO — PRODUTO COMO PROTAGONISTA
         =================================================== -->
         <section class="hero" id="inicio">
 
-            <div class="shell hero-grid">
+            <div class="hero-grid">
 
-                <div class="hero-editorial">
-                    <p class="micro-label reveal">
-                        HEADLESS / SERIES 01
-                    </p>
+                <div class="hero-copy">
+
+                    <div class="hero-code reveal">
+                        <span>HEADLESS / 01</span>
+                        <span>DESIGN FOR PERFORMANCE</span>
+                    </div>
 
                     <h1 class="reveal">
-                        Form<br>
-                        follows<br>
-                        <em>feel.</em>
+                        HEADLESS.<br>
+                        REFINED.
                     </h1>
 
-                    <div class="hero-copy reveal">
-                        <p>
-                            Instrumentos desenhados para reduzir excessos,
-                            ampliar controle e aproximar o músico do som.
-                        </p>
+                    <p class="hero-description reveal">
+                        Um instrumento contemporâneo para quem procura
+                        equilíbrio, precisão e liberdade para tocar.
+                    </p>
 
-                        <a class="text-link" href="#headless">
-                            Descobrir a filosofia
-                            <span aria-hidden="true">↘</span>
+                    <div class="hero-actions reveal">
+                        <a class="button button-orange" href="#modelos">
+                            Ver headless
+                        </a>
+
+                        <a class="button button-dark-outline" href="#engenharia">
+                            Conhecer o design
                         </a>
                     </div>
+
                 </div>
 
-                <figure class="hero-product">
-                    <div class="hero-product-stage">
-                        <span class="hero-index" aria-hidden="true">01</span>
+                <div class="hero-product">
 
-                        <img
-                            src="hero-eart-headless.png"
-                            alt="Guitarra EART headless em destaque"
-                            fetchpriority="high"
-                        >
-
-                        <figcaption>
-                            <span>HEADLESS</span>
-                            <span>OBJECT / PERFORMANCE</span>
-                        </figcaption>
+                    <div class="hero-product-bg" aria-hidden="true">
+                        <span class="hero-ring hero-ring-1"></span>
+                        <span class="hero-ring hero-ring-2"></span>
+                        <span class="hero-cross hero-cross-a"></span>
+                        <span class="hero-cross hero-cross-b"></span>
                     </div>
-                </figure>
 
-                <aside class="hero-note reveal">
-                    <span class="hero-note-line"></span>
-
-                    <p>
-                        Precisão visual.<br>
-                        Equilíbrio físico.<br>
-                        Resposta direta.
-                    </p>
-                </aside>
-
-            </div>
-
-            <div class="hero-marquee" aria-hidden="true">
-                <div class="hero-marquee-track">
-                    <span>HEADLESS IS NOT LESS</span>
-                    <i></i>
-                    <span>HEADLESS IS FOCUSED</span>
-                    <i></i>
-                    <span>HEADLESS IS NOT LESS</span>
-                    <i></i>
-                    <span>HEADLESS IS FOCUSED</span>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- ==================================================
-             MANIFESTO
-        =================================================== -->
-        <section class="manifesto" id="manifesto">
-
-            <div class="shell manifesto-grid">
-
-                <div class="manifesto-side reveal">
-                    <p class="micro-label micro-label-light">
-                        MANIFESTO / 001
-                    </p>
-                </div>
-
-                <div class="manifesto-main reveal">
-                    <p class="manifesto-kicker">
-                        O luxo de um instrumento está no que ele elimina.
-                    </p>
-
-                    <h2>
-                        Menos massa.<br>
-                        Menos distração.<br>
-                        <em>Mais intenção.</em>
-                    </h2>
-
-                    <p class="manifesto-body">
-                        A linguagem headless parte de uma escolha clara:
-                        colocar ergonomia, equilíbrio e precisão acima da tradição visual.
-                        A forma deixa de ser ornamento e passa a trabalhar a favor da execução.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ==================================================
-             HEADLESS OBJECT
-        =================================================== -->
-        <section class="object-section" id="headless">
-
-            <div class="shell object-grid">
-
-                <div class="object-media reveal-image">
                     <img
-                        src="eart-headless-profile.jpg"
-                        alt="Perfil de guitarra headless EART"
-                        loading="lazy"
+                        class="hero-guitar"
+                        src="hero-eart-headless.png"
+                        alt="Guitarra headless EART"
+                        fetchpriority="high"
                     >
+
+                    <div class="hero-product-label hero-product-label-top">
+                        <span>01</span>
+                        <strong>HEADLESS SERIES</strong>
+                    </div>
+
+                    <div class="hero-product-label hero-product-label-bottom">
+                        <span>FORM</span>
+                        <strong>FOLLOWS PERFORMANCE</strong>
+                    </div>
+
                 </div>
 
-                <div class="object-copy reveal">
-                    <p class="micro-label">HEADLESS / FORM STUDY</p>
+            </div>
 
+            <div class="hero-bottom">
+                <div>
+                    <span>COMPACT</span>
+                    <strong>FORM</strong>
+                </div>
+
+                <div>
+                    <span>PLAYER-FIRST</span>
+                    <strong>ERGONOMICS</strong>
+                </div>
+
+                <div>
+                    <span>DIRECT</span>
+                    <strong>CONTROL</strong>
+                </div>
+
+                <a href="#headless" aria-label="Ir para a próxima seção">↓</a>
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             STATEMENT
+        =================================================== -->
+        <section class="statement" id="headless">
+
+            <div class="container statement-grid">
+
+                <div class="statement-label reveal">
+                    <span>01</span>
+                    <p>HEADLESS PHILOSOPHY</p>
+                </div>
+
+                <div class="statement-content reveal">
                     <h2>
-                        Um instrumento<br>
-                        que ocupa menos<br>
-                        <em>e entrega mais.</em>
+                        MENOS EXCESSO.<br>
+                        MAIS INSTRUMENTO.
                     </h2>
 
                     <p>
-                        A ausência do headstock muda o centro de gravidade,
-                        a leitura visual e a sensação do instrumento no corpo.
+                        A proposta headless elimina massa onde ela não é necessária
+                        e reorganiza o instrumento ao redor de quem toca.
+                        O resultado é uma experiência visualmente limpa,
+                        compacta e contemporânea.
                     </p>
-
-                    <div class="object-specs">
-                        <div>
-                            <span>01</span>
-                            <strong>Equilíbrio</strong>
-                            <small>Distribuição de massa mais racional.</small>
-                        </div>
-
-                        <div>
-                            <span>02</span>
-                            <strong>Mobilidade</strong>
-                            <small>Formato compacto para transportar e tocar.</small>
-                        </div>
-
-                        <div>
-                            <span>03</span>
-                            <strong>Controle</strong>
-                            <small>Resposta direta e sensação contemporânea.</small>
-                        </div>
-                    </div>
                 </div>
 
             </div>
 
         </section>
 
+
         <!-- ==================================================
-             DETAIL STRIP
+             FEATURE PRODUCT
         =================================================== -->
-        <section class="detail-strip" id="construcao">
+        <section class="feature-product">
 
-            <article class="detail-panel reveal-image">
-                <img src="detail-eart-bridge.jpg" alt="Detalhe da ponte EART" loading="lazy">
-                <div class="detail-caption">
-                    <span>01 / HARDWARE</span>
-                    <h3>Precisão no ponto de contato.</h3>
-                </div>
-            </article>
+            <div class="feature-image reveal-image">
+                <img
+                    src="eart-headless-side.jpg"
+                    alt="Guitarra EART headless em perfil"
+                    loading="lazy"
+                >
 
-            <article class="detail-panel reveal-image">
-                <img src="detail-eart-neck.jpg" alt="Detalhe do braço EART" loading="lazy">
-                <div class="detail-caption">
-                    <span>02 / NECK</span>
-                    <h3>Geometria feita para fluir.</h3>
-                </div>
-            </article>
+                <div class="feature-index">02</div>
+            </div>
+
+            <div class="feature-copy reveal">
+
+                <span class="section-number">02 / BALANCE</span>
+
+                <h2>
+                    PROJETADA<br>
+                    PARA FICAR<br>
+                    FORA DO CAMINHO.
+                </h2>
+
+                <p>
+                    Menos volume visual, formato compacto e uma linguagem
+                    feita para o músico se concentrar no que realmente importa:
+                    tocar.
+                </p>
+
+                <a class="text-arrow" href="#engenharia">
+                    Explorar a construção
+                    <span>↗</span>
+                </a>
+
+            </div>
 
         </section>
 
+
         <!-- ==================================================
-             COLLECTION
+             ENGINEERING
         =================================================== -->
-        <section class="collection" id="colecao">
+        <section class="engineering" id="engenharia">
 
-            <div class="shell">
+            <div class="container">
 
-                <div class="collection-head reveal">
+                <div class="section-heading reveal">
                     <div>
-                        <p class="micro-label">CURRENT SELECTION / 2026</p>
-
+                        <span class="section-number">03 / ENGINEERING</span>
                         <h2>
-                            The<br>
-                            collection.
+                            DESENHADA<br>
+                            AO REDOR<br>
+                            DO MÚSICO.
                         </h2>
                     </div>
 
                     <p>
-                        Uma curadoria enxuta. Cada modelo existe para
-                        uma maneira específica de tocar.
+                        Uma abordagem moderna de instrumento:
+                        menos decoração, mais função.
                     </p>
                 </div>
 
-                <div class="collection-list">
+                <div class="engineering-grid">
 
-                    <article class="model-row reveal">
-                        <div class="model-number">01</div>
-
-                        <div class="model-image">
-                            <img
-                                src="modelo-eart-headless-6.png"
-                                alt="EART Headless 6"
-                                loading="lazy"
-                            >
-                        </div>
-
-                        <div class="model-name">
-                            <p>6 STRINGS / HEADLESS</p>
-                            <h3>H6 / FORM</h3>
-                        </div>
-
-                        <div class="model-meta">
-                            <span>Performance</span>
-                            <span>Compact</span>
-                            <span>Modern</span>
-                        </div>
-
-                        <a href="#contato" class="model-arrow" aria-label="Consultar H6 Form">
-                            ↗
-                        </a>
+                    <article class="engineering-card reveal">
+                        <span class="card-number">01</span>
+                        <div class="card-line"></div>
+                        <h3>EQUILÍBRIO</h3>
+                        <p>
+                            Uma leitura de peso e proporção voltada
+                            à sensação do instrumento no corpo.
+                        </p>
                     </article>
 
-                    <article class="model-row reveal">
-                        <div class="model-number">02</div>
-
-                        <div class="model-image">
-                            <img
-                                src="modelo-eart-headless-7.png"
-                                alt="EART Headless 7"
-                                loading="lazy"
-                            >
-                        </div>
-
-                        <div class="model-name">
-                            <p>7 STRINGS / HEADLESS</p>
-                            <h3>H7 / RANGE</h3>
-                        </div>
-
-                        <div class="model-meta">
-                            <span>Extended</span>
-                            <span>Low range</span>
-                            <span>Precision</span>
-                        </div>
-
-                        <a href="#contato" class="model-arrow" aria-label="Consultar H7 Range">
-                            ↗
-                        </a>
+                    <article class="engineering-card reveal">
+                        <span class="card-number">02</span>
+                        <div class="card-line"></div>
+                        <h3>ERGONOMIA</h3>
+                        <p>
+                            Construção compacta para diferentes
+                            posições e maneiras de tocar.
+                        </p>
                     </article>
 
-                    <article class="model-row reveal">
-                        <div class="model-number">03</div>
+                    <article class="engineering-card reveal">
+                        <span class="card-number">03</span>
+                        <div class="card-line"></div>
+                        <h3>CONTROLE</h3>
+                        <p>
+                            Interface direta entre músico,
+                            hardware e instrumento.
+                        </p>
+                    </article>
 
-                        <div class="model-image">
-                            <img
-                                src="modelo-eart-solid.png"
-                                alt="EART Solid Body"
-                                loading="lazy"
-                            >
-                        </div>
-
-                        <div class="model-name">
-                            <p>6 STRINGS / SOLID</p>
-                            <h3>S6 / CLASSIC</h3>
-                        </div>
-
-                        <div class="model-meta">
-                            <span>Traditional</span>
-                            <span>Refined</span>
-                            <span>Versatile</span>
-                        </div>
-
-                        <a href="#contato" class="model-arrow" aria-label="Consultar S6 Classic">
-                            ↗
-                        </a>
+                    <article class="engineering-card reveal">
+                        <span class="card-number">04</span>
+                        <div class="card-line"></div>
+                        <h3>MOBILIDADE</h3>
+                        <p>
+                            Menor volume para acompanhar uma rotina
+                            de ensaios, estúdio e palco.
+                        </p>
                     </article>
 
                 </div>
@@ -382,64 +317,246 @@
 
         </section>
 
+
         <!-- ==================================================
-             QUOTE / LUXURY BREATHING SPACE
+             DETAILS
         =================================================== -->
-        <section class="quote-section">
+        <section class="details" id="detalhes">
 
-            <div class="shell quote-grid">
+            <div class="details-header container reveal">
+                <span class="section-number">04 / DETAILS</span>
+                <h2>PRECISÃO NOS DETALHES.</h2>
+            </div>
 
-                <p class="micro-label reveal">
-                    EART / DESIGN LANGUAGE
-                </p>
+            <div class="details-grid">
 
-                <blockquote class="reveal">
-                    “A boa forma não pede atenção.
-                    Ela melhora tudo ao redor.”
-                </blockquote>
+                <article class="detail detail-large reveal-image">
+                    <img
+                        src="detail-eart-bridge.jpg"
+                        alt="Detalhe da ponte EART"
+                        loading="lazy"
+                    >
 
-                <p class="quote-note reveal">
-                    Um instrumento premium não precisa parecer complexo.
-                    Precisa parecer inevitável.
-                </p>
+                    <div class="detail-overlay">
+                        <span>01 / HARDWARE</span>
+                        <h3>CONTROLE ONDE IMPORTA.</h3>
+                    </div>
+                </article>
+
+                <article class="detail reveal-image">
+                    <img
+                        src="detail-eart-neck.jpg"
+                        alt="Detalhe do braço EART"
+                        loading="lazy"
+                    >
+
+                    <div class="detail-overlay">
+                        <span>02 / NECK</span>
+                        <h3>CONFORTO EM MOVIMENTO.</h3>
+                    </div>
+                </article>
+
+                <article class="detail reveal-image">
+                    <img
+                        src="detail-eart-finish.jpg"
+                        alt="Detalhe do acabamento EART"
+                        loading="lazy"
+                    >
+
+                    <div class="detail-overlay">
+                        <span>03 / FINISH</span>
+                        <h3>VISUAL SEM EXCESSOS.</h3>
+                    </div>
+                </article>
 
             </div>
 
         </section>
 
+
         <!-- ==================================================
-             CONTACT / CTA
+             MODELS
+        =================================================== -->
+        <section class="models" id="modelos">
+
+            <div class="container">
+
+                <div class="models-heading reveal">
+
+                    <div>
+                        <span class="section-number">05 / COLLECTION</span>
+
+                        <h2>
+                            HEADLESS<br>
+                            COLLECTION
+                        </h2>
+                    </div>
+
+                    <p>
+                        Uma seleção pensada para destacar
+                        diferentes propostas dentro da linguagem EART.
+                    </p>
+
+                </div>
+
+
+                <div class="models-list">
+
+                    <article class="model-item reveal">
+
+                        <div class="model-index">01</div>
+
+                        <div class="model-product">
+                            <img
+                                src="modelo-eart-gw2.png"
+                                alt="EART GW2 Headless"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="model-title">
+                            <span>HEADLESS / 6 STRINGS</span>
+                            <h3>GW2</h3>
+                        </div>
+
+                        <div class="model-tags">
+                            <span>HEADLESS</span>
+                            <span>COMPACT</span>
+                            <span>MODERN</span>
+                        </div>
+
+                        <a class="model-open" href="#contato" aria-label="Consultar EART GW2">
+                            ↗
+                        </a>
+
+                    </article>
+
+
+                    <article class="model-item reveal">
+
+                        <div class="model-index">02</div>
+
+                        <div class="model-product">
+                            <img
+                                src="modelo-eart-headless-2.png"
+                                alt="Guitarra EART headless"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="model-title">
+                            <span>HEADLESS / PERFORMANCE</span>
+                            <h3>H SERIES</h3>
+                        </div>
+
+                        <div class="model-tags">
+                            <span>PRECISION</span>
+                            <span>PLAYER-FIRST</span>
+                            <span>LIGHT</span>
+                        </div>
+
+                        <a class="model-open" href="#contato" aria-label="Consultar EART H Series">
+                            ↗
+                        </a>
+
+                    </article>
+
+
+                    <article class="model-item reveal">
+
+                        <div class="model-index">03</div>
+
+                        <div class="model-product">
+                            <img
+                                src="modelo-eart-modern.png"
+                                alt="Guitarra EART moderna"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="model-title">
+                            <span>MODERN / 6 STRINGS</span>
+                            <h3>MODERN</h3>
+                        </div>
+
+                        <div class="model-tags">
+                            <span>SOLID</span>
+                            <span>VERSATILE</span>
+                            <span>CONTEMPORARY</span>
+                        </div>
+
+                        <a class="model-open" href="#contato" aria-label="Consultar EART Modern">
+                            ↗
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             ORANGE BRAND BLOCK
+        =================================================== -->
+        <section class="brand-block">
+
+            <div class="brand-block-word" aria-hidden="true">
+                EART
+            </div>
+
+            <div class="container brand-block-content reveal">
+                <span>06 / EART BRASIL</span>
+
+                <h2>
+                    O FUTURO NÃO PRECISA<br>
+                    PARECER COM O PASSADO.
+                </h2>
+
+                <a href="#contato">
+                    Falar com a EART Brasil ↗
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CONTACT
         =================================================== -->
         <section class="contact" id="contato">
 
-            <div class="shell contact-grid">
+            <div class="container contact-grid">
 
-                <div class="contact-title reveal">
-                    <p class="micro-label micro-label-light">
-                        PRIVATE CONSULTATION
-                    </p>
+                <div class="contact-heading reveal">
+                    <span class="section-number">07 / CONTACT</span>
 
                     <h2>
-                        Find<br>
-                        your<br>
-                        <em>EART.</em>
+                        ENCONTRE<br>
+                        SUA EART.
                     </h2>
                 </div>
 
-                <div class="contact-copy reveal">
+                <div class="contact-panel reveal">
+
                     <p>
-                        Consulte modelos, disponibilidade, acabamentos
-                        e canais de compra no Brasil.
+                        Consulte modelos, disponibilidade, acabamentos,
+                        revendedores e informações sobre a linha EART no Brasil.
                     </p>
 
-                    <a class="contact-button" href="mailto:contato@eartbrasil.com.br">
+                    <a class="contact-primary" href="mailto:contato@eartbrasil.com.br">
                         contato@eartbrasil.com.br
                         <span>↗</span>
                     </a>
 
-                    <a class="contact-simple" href="#">
-                        Instagram / EART Brasil
-                    </a>
+                    <div class="contact-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Onde comprar</a>
+                        <a href="#">Revendedores</a>
+                    </div>
+
                 </div>
 
             </div>
@@ -448,73 +565,92 @@
 
     </main>
 
+
     <!-- ==================================================
          FOOTER
     =================================================== -->
     <footer class="footer">
 
-        <div class="shell footer-top">
+        <div class="container footer-main">
+
             <a class="brand brand-footer" href="#inicio">
-                <span class="brand-main">EART</span>
-                <span class="brand-sub">BRASIL</span>
+                <img src="logo-eart.png" alt="EART Brasil">
             </a>
 
             <p>
-                Headless instruments.<br>
-                Designed around the player.
+                Headless guitars.<br>
+                Modern design.<br>
+                Player-first engineering.
             </p>
 
-            <div class="footer-nav">
-                <a href="#manifesto">Manifesto</a>
+            <nav class="footer-nav">
                 <a href="#headless">Headless</a>
-                <a href="#colecao">Coleção</a>
+                <a href="#engenharia">Engenharia</a>
+                <a href="#modelos">Modelos</a>
                 <a href="#contato">Contato</a>
-            </div>
+            </nav>
+
         </div>
 
-        <div class="shell footer-bottom">
+        <div class="container footer-bottom">
             <span>© <span id="ano"></span> EART Brasil</span>
-            <span>São Paulo / Brasil</span>
+            <span>DESIGN / PERFORMANCE / PRECISION</span>
         </div>
 
     </footer>
 
-    <script>
-        const ano = document.querySelector("#ano");
-        if (ano) ano.textContent = new Date().getFullYear();
 
-        const menuToggle = document.querySelector(".menu-toggle");
+    <script>
+        const reduzirMovimento = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+        const menuButton = document.querySelector(".menu-button");
         const nav = document.querySelector(".nav");
 
-        if (menuToggle && nav) {
-            menuToggle.addEventListener("click", () => {
+        if (menuButton && nav) {
+            menuButton.addEventListener("click", () => {
                 const aberto = nav.classList.toggle("open");
-                menuToggle.setAttribute("aria-expanded", aberto ? "true" : "false");
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    aberto ? "true" : "false"
+                );
             });
 
             nav.querySelectorAll("a").forEach(link => {
                 link.addEventListener("click", () => {
                     nav.classList.remove("open");
-                    menuToggle.setAttribute("aria-expanded", "false");
+                    menuButton.setAttribute("aria-expanded", "false");
                 });
             });
         }
 
-        const reduzirMovimento = window.matchMedia(
-            "(prefers-reduced-motion: reduce)"
-        ).matches;
+        const ano = document.querySelector("#ano");
 
-        const items = document.querySelectorAll(".reveal, .reveal-image");
+        if (ano) {
+            ano.textContent = new Date().getFullYear();
+        }
 
-        if (reduzirMovimento || !("IntersectionObserver" in window)) {
-            items.forEach(item => item.classList.add("is-visible"));
+        const elementos = document.querySelectorAll(
+            ".reveal, .reveal-image"
+        );
+
+        if (
+            reduzirMovimento ||
+            !("IntersectionObserver" in window)
+        ) {
+            elementos.forEach(elemento => {
+                elemento.classList.add("visible");
+            });
         } else {
             const observer = new IntersectionObserver(
-                entries => {
-                    entries.forEach(entry => {
-                        if (!entry.isIntersecting) return;
-                        entry.target.classList.add("is-visible");
-                        observer.unobserve(entry.target);
+                entradas => {
+                    entradas.forEach(entrada => {
+                        if (!entrada.isIntersecting) return;
+
+                        entrada.target.classList.add("visible");
+                        observer.unobserve(entrada.target);
                     });
                 },
                 {
@@ -523,7 +659,9 @@
                 }
             );
 
-            items.forEach(item => observer.observe(item));
+            elementos.forEach(elemento => {
+                observer.observe(elemento);
+            });
         }
     </script>
 
